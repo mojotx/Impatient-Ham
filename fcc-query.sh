@@ -48,7 +48,6 @@ send_email()
 {
     local mess=$1
     local MAIL_TO=${EMAIL_ADDRESS}
-    #local MAIL_TO="2142540154@tmomail.net"
 
     local MY_EMAIL=$( ${MKTEMP} )
     trap "rm -vf ${MY_EMAIL}" 0 1 2 15
